@@ -1,8 +1,8 @@
 import React from 'react'
 import "./contact.css"
-import Phone from "../../img/phone.png"
-import Email from "../../img/email.png"
-import Adress from "../../img/adress.png"
+import Phone from "../../images/test1.png"
+import Email from "../../images/test1.png"
+import Adress from "../../images/test1.png"
 import { useContext, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -36,7 +36,7 @@ const Contact = () => {
         <div className="c-wrapper">
         <div className="c-left">
           <h1 className="c-title">   
-          Kontakt oplysninger </h1>
+          Smid gerne en besked min vej! </h1>
           <div className="c-info">
             <div className="c-info-item">
             <img  src={Phone}alt="" className="c-icon" />
@@ -44,11 +44,11 @@ const Contact = () => {
           </div>
           <div className="c-info-item">
           <img  src={Email}alt="" className="c-icon" />
-          pete46m9@stud.kea.dk
+          peteross@outlook.dk
           </div>
           <div className="c-info-item">
           <img  src={Adress}alt="" className="c-icon" />
-          Rabarbervej 12, 2400 København
+          København
           </div>
           </div>
          

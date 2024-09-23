@@ -1,10 +1,10 @@
 import React from 'react'
 import Product from '../product/Product'
 import "./productList.css"
-import FoodApp from "../../img/delivery_icon.png"
-import guldborgsund from "../../img/guldborgsund.jpg"
-import Chat from "../../img/Chat.png"
-import Task from "../../img/task.png"
+import FoodApp from "../../images/test1.png"
+import guldborgsund from "../../images/test1.png"
+import Chat from "../../images/test1.png"
+import Task from "../../images/test1.png"
 
 
 
@@ -12,17 +12,17 @@ const ProductList = () => {
   return (
     <div className='pl'>
         <div className="pl-texts">
-        <h1 className="pl-title">Kreative løsninger - Det er lige mig</h1>
+        <h1 className="pl-title">Mine projekter</h1>
         <p className="pl-desc">
-          Forhåbenligt viser min portfolio lige hvad i har brug for.
-           Gamle eksamens opgave, små hygge projecter, og hvad jeg arbejder på i øjeblikket
+          Forhåbenligt viser min portfolio, hvad jeg har dyppet mine tæer i;
+           Gamle eksamens opgave, små hygge projecter, og hvad jeg arbejder på i øjeblikket,
            kan alt sammen findes her. 
         </p>
         </div>
         <div className="pl-list" >
         <a href='https://github.com/pross99/FoodApp'>
             <img src={FoodApp} alt=""  />
-            <h4> Mit nuværrende projekt</h4>
+            <h4> Afslutende eksamens opgave</h4>
             <p className='pl-p'>
             Mad leverings app - Reactnatvie // Typescript     
             </p>
@@ -45,7 +45,15 @@ const ProductList = () => {
             <img src={Task} alt=""  />
             <h4> Task Tracker</h4>
             <p className='pl-p'>
-                Lille Fullstack projekt med Json backend
+                Lille javascript projekt med CRUD operationer 
+            </p>
+        </a>
+
+        <a href='https://github.com/pross99/pross.99.github.io' className='pl-task'>
+            <img src={Task} alt=""  />
+            <h4> [nuværende projekt]</h4>
+            <p className='pl-p'>
+                Detaljer om nuværende projekt
             </p>
         </a>
         

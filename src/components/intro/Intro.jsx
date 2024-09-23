@@ -1,6 +1,6 @@
 import React from 'react'
 import "./intro.css"
-import Me from "../../img/me.jpg"
+import Me from "../../images/test1.png"
 
 const intro = () => {
   return (
@@ -11,13 +11,13 @@ const intro = () => {
             <h1 className='i-name'>Peter Ross</h1>
             <div className="i-title">
                 <div className="i-title-wrapper">
-                    <div className="i-title-item"> Sofware/Web Udvikler</div>
-                    <div className="i-title-item"> UI/UX Desinger</div>
+                    <div className="i-title-item"> jeres næste Udvikler!</div>
                     <div className="i-title-item"> Frontend Developer // Backend developer </div>
+                    <div className="i-title-item"> Microsoft power platform </div>
                 </div>
             </div>
             <p className="i-description">
-             Udvikling er mit mellemnavn - og Peter er mit fornavn. Jeg er 22 år gammel, og ville elske at komme i praktik hos jer. 
+             Udvikling er mit mellemnavn - og Peter er mit fornavn. Jeg er 24 år gammel, og søger altid nye udfordringer. 
             </p>
         </div>
         <svg

@@ -61,6 +61,7 @@
     background-color: chartreuse;
     display: flex;
     align-items: center;
+    padding-left: 8px;
 }
 
 .i-scroll{

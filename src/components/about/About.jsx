@@ -1,7 +1,7 @@
 import React from 'react'
 import "./about.css"
-import bob from "../../img/bob2.png"
-import Kea from "../../img/Kea.jpg"
+import bob from "../../images/test1.png"
+import Kea from "../../images/test1.png"
 const About = () => {
   return (
     <div className='a'>
@@ -16,23 +16,21 @@ const About = () => {
         </div>
       </div>
       <div className="a-right">
-      <h1 className="a-title">Praktik</h1>
+      <h1 className="a-title">Nuværende arbejde</h1>
         <p className="a-sub">
-          Jeg leder efter en praktikplads d.22 august - 28.oktober. 
+          Partner support hos Monosolutions. 
         </p>
         <p className="a-desc">
-          Jeg har udvalgt et par projekter som jeg har lavet under min uddannelse. 
-          Jeg håber de viser nogenlunde hvad jeg kan - og hvor jeg kan forbedre mig. 
-          
+          Siden min ansætelse i Marts 2023, har jeg hjulpet virksomheder med at bygge hjemmesider, opsætte DNS, Email troubleshooting og opslå diverse rapporter i SQL. 
         </p>
         <div className="a-kommune">
           <a href='https://github.com/pross99/Kommunevalg'>
           <img  src={Kea} alt="" className="a-kommunevalg-img" />
           </a>
           <div className="a-kommune-texts">
-          <p>Studernde hos kea på 4. Semester</p>
+          <p>Dog er udvikling mere spændende, hvis jeg skal være ærlig</p>
             <p className="a-kommune-desc">
-              Nuværrende fag: intro til python, React-native og It-drift.
+              Mine fokusområder: React & node.js .
             </p>
           </div>
       </div>
