@@ -38,6 +38,8 @@
 
 .i-title{
     height: 50px;
+    border-radius: 8px;
+    width: 70%;
     overflow: hidden;
 }
 .i-title-wrapper{
@@ -57,11 +59,12 @@
     height: 50px;
     font-size: 30px;
     font-weight: bold;
-    color: blue;
-    background-color: chartreuse;
+    color: #975846;
+    background-color: #14e2f9;
     display: flex;
     align-items: center;
     padding-left: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .i-scroll{
@@ -85,4 +88,19 @@
     position: absolute;
     top: 0;
     right: 0;
+}
+
+svg {
+    gap: 10px; /* Adds spacing between items */
+    padding: 10px; /* Adds padding inside the wrapper */
+    background-color:#14e2f9;
+    border-radius: 12px; /* Rounds the edges of the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+svg:hover {
+
+    background-color: #136af1; /* Light blue background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
 }

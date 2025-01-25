@@ -12,11 +12,9 @@ const ProductList = () => {
   return (
     <div className='pl'>
         <div className="pl-texts">
-        <h1 className="pl-title">Mine projekter</h1>
+        <h1 className="pl-title">Projects</h1>
         <p className="pl-desc">
-          Forhåbenligt viser min portfolio, hvad jeg har dyppet mine tæer i;
-           Gamle eksamens opgave, små hygge projecter, og hvad jeg arbejder på i øjeblikket,
-           kan alt sammen findes her. 
+         Below you will find some of the projects I have worked on. As most of my projects are passion or study related, they are not deployed anywhere. You can however click on the images below in order to read more information and a larger screen shot from the application. 
         </p>
         </div>
         <div className="pl-list" >

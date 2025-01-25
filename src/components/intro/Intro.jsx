@@ -1,24 +1,29 @@
 import React from 'react'
 import "./intro.css"
-import Me from "../../images/test1.png"
+import pRoss from "../../images/PRoss.jpg"
 
 const intro = () => {
   return (
     <div className="i">
         <div className="i-left"> 
         <div className="i-left-wrapper">
-            <h2 className='i-intro'>Hej, mit navn er  </h2>
             <h1 className='i-name'>Peter Ross</h1>
+            <p className="i-description">
+            Hi there! I’m a passionate, aspiring Danish developer eager to launch my career in the world of tech.
+Breaking into the industry can be challenging, especially when work experience within the field seems to be a prerequisite for many opportunities. That’s why I’ve created this portfolio—to showcase the projects I’ve worked on.
+Take a look around, and feel free to reach out if you’d like to connect or discuss potential opportunities
+            </p>
+
+            <h2 className='i-intro'>Tech stacks i have the most expierence with:  </h2>
             <div className="i-title">
                 <div className="i-title-wrapper">
-                    <div className="i-title-item"> jeres næste Udvikler!</div>
-                    <div className="i-title-item"> Frontend Developer // Backend developer </div>
-                    <div className="i-title-item"> Microsoft power platform </div>
+                    <div className="i-title-item"> ReactJS</div>
+                    <div className="i-title-item"> Java Spring boot </div>
+                    <div className="i-title-item"> Node.js </div>
+                    <div className="i-title-item"> Some TypeScript </div>
+                    <div className="i-title-item"> Google cloud</div>
                 </div>
             </div>
-            <p className="i-description">
-             Udvikling er mit mellemnavn - og Peter er mit fornavn. Jeg er 24 år gammel, og søger altid nye udfordringer. 
-            </p>
         </div>
         <svg
           width="75"
@@ -79,7 +84,7 @@ const intro = () => {
         </div>
         <div className="i-right">
             <div className="i-bg"></div>
-            <img  src={Me} alt="" className='i-img'/>
+            <img  src={pRoss} alt="" className='i-img'/>
         </div>
        
     </div>

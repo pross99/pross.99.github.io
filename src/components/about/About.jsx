@@ -1,7 +1,9 @@
 import React from 'react'
 import "./about.css"
-import bob from "../../images/test1.png"
-import Kea from "../../images/test1.png"
+import bob from "../../images/bob.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faMagnifyingGlassArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 const About = () => {
   return (
     <div className='a'>
@@ -16,22 +18,18 @@ const About = () => {
         </div>
       </div>
       <div className="a-right">
-      <h1 className="a-title">Nuværende arbejde</h1>
+      <h1 className="a-title">Current position</h1>
         <p className="a-sub">
-          Partner support hos Monosolutions. 
+        After earning my degree as a 'Datamatiker,' I have been working as a second-level support for companies across Europe, assisting them in effectively utilizing a website builder tool.
         </p>
         <p className="a-desc">
-          Siden min ansætelse i Marts 2023, har jeg hjulpet virksomheder med at bygge hjemmesider, opsætte DNS, Email troubleshooting og opslå diverse rapporter i SQL. 
+         I have gained expiernce in working closly with others - and nationalities from around the globe. I have also honed my skills in writing more complex SQL quireies
         </p>
         <div className="a-kommune">
-          <a href='https://github.com/pross99/Kommunevalg'>
-          <img  src={Kea} alt="" className="a-kommunevalg-img" />
-          </a>
+        <FontAwesomeIcon icon={faMagnifyingGlassArrowRight} />
           <div className="a-kommune-texts">
-          <p>Dog er udvikling mere spændende, hvis jeg skal være ærlig</p>
-            <p className="a-kommune-desc">
-              Mine fokusområder: React & node.js .
-            </p>
+          <p>I am however still itching for my first develop postition</p>
+          <p>Aprat from the tech stacks i most comfortable in, I have also worked with integrating external OAuth APIs, deployment of docker images to cloud services and writing server functions </p>
           </div>
       </div>
     </div>
