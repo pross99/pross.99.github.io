@@ -70,6 +70,8 @@
 
 
 
+
+
 @media screen and (max-width: 480px) {
     .pl {
       padding: 10px;
@@ -83,3 +85,16 @@
       display: none;
     }
   }
+
+  .image-container {
+    width: 150px; /* Set the container width */
+    height: 150px; /* Set the container height */
+    overflow: hidden; /* Ensures the image doesn’t spill out */
+    display: inline-block;
+}
+
+.hover-image {
+    width: 100%; /* Fill the container */
+    height: 100%; /* Fill the container */
+    object-fit: cover; /* Prevent distortion */
+}
