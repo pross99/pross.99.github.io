@@ -11,10 +11,8 @@ const intro = () => {
             <p className="i-description">
             Hi there! I’m a passionate, aspiring Danish developer eager to launch my career in the world of tech.
 Breaking into the industry can be challenging, especially when work experience within the field seems to be a prerequisite for many opportunities. That’s why I’ve created this portfolio—to showcase the projects I’ve worked on.
-Take a look around, and feel free to reach out if you’d like to connect or discuss potential opportunities
-            </p>
 
-            <h2 className='i-intro'>Tech stacks i have the most expierence with:  </h2>
+            </p>
             <div className="i-title">
                 <div className="i-title-wrapper">
                     <div className="i-title-item"> ReactJS</div>
@@ -22,6 +20,8 @@ Take a look around, and feel free to reach out if you’d like to connect or dis
                     <div className="i-title-item"> Node.js </div>
                     <div className="i-title-item"> Some TypeScript </div>
                     <div className="i-title-item"> Google cloud</div>
+                    <div className="i-title-item"> API</div>
+                    <div className="i-title-item"> MySQL and MongoDB</div>
                 </div>
             </div>
         </div>

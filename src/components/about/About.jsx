@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css"
-import bob from "../../images/bob.png"
+import bob from "../../images/bob2.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faMagnifyingGlassArrowRight } from '@fortawesome/free-solid-svg-icons';
 

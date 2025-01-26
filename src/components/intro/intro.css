@@ -11,6 +11,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
 }
 
 .i-right{
@@ -19,52 +21,79 @@
 
 }
 
-.i-left-wrapper{
-    padding: 50px;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.i-intro{
-    font-size: 300;
-    font-weight: 300;
+.i-left-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .i-name {
-    font-size: 60px;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
-.i-title{
-    height: 50px;
+.i-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.i-intro {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.i-title {
+    background-color: #f0f0f0;
     border-radius: 8px;
-    width: 70%;
-    overflow: hidden;
-}
-.i-title-wrapper{
-    height: 100%;
-    animation: move 10s ease-in-out infinite alternate;
+    padding: 1rem;
 }
 
-@keyframes move {
-50%{
-    transform: translateY(-50px)
-}
-100%{
-    transform: translateY(-100px)
-}
-}
-.i-title-item{
-    height: 50px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #975846;
-    background-color: #14e2f9;
+.i-title-wrapper {
     display: flex;
-    align-items: center;
-    padding-left: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.i-title-item {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.i-title-item:hover {
+    background-color: #d0d0d0;
+}
+
+@media (max-width: 600px) {
+    .i-left-wrapper {
+        padding: 1rem;
+    }
+
+    .i-name {
+        font-size: 2rem;
+    }
+
+    .i-title-wrapper {
+        flex-direction: column;
+    }
+
+    .i-title-item {
+        text-align: center;
+    }
 }
 
 .i-scroll{
