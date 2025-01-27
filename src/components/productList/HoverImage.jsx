@@ -11,9 +11,10 @@ return (
             <button onClick={props.toggle} className='h-button-close'> Close</button>
         <div className="h-left-wrapper">
             <h1 className='h-name'>Item tracker/wishlist</h1>
+
             <p className="h-description">
            
-
+                Full stack passion project
             </p>
 
             <h2 className='h-intro'>Technologies used:  </h2>

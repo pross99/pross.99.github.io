@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a52c9269.css",
+    "main.js": "/static/js/main.ad2dc0d8.js",
+    "static/media/wowTrackerImg.png": "/static/media/wowTrackerImg.3ff3dccd9b5791e28fec.png",
+    "static/media/test1.png": "/static/media/test1.dd8474ac3f12b6837e3c.png",
+    "static/media/bob2.png": "/static/media/bob2.21e104ec38bb8b1b0107.png",
+    "static/media/PRoss.jpg": "/static/media/PRoss.8e5fe4c6b2f7cac81269.jpg",
+    "static/media/FoodApp.png": "/static/media/FoodApp.f2c1dd9df3e2d5b6a921.png",
+    "index.html": "/index.html",
+    "main.a52c9269.css.map": "/static/css/main.a52c9269.css.map",
+    "main.ad2dc0d8.js.map": "/static/js/main.ad2dc0d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a52c9269.css",
+    "static/js/main.ad2dc0d8.js"
+  ]
+}

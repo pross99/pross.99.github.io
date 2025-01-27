@@ -1,4 +1,4 @@
-.pl{
+.pl {
     padding: 50px 100px;
     display: flex;
     flex-direction: column;
@@ -6,95 +6,202 @@
     text-align: center;
 }
 
-.pl-texts{
+.pl-texts {
     width: 65%;
 }
 
-.pl-title{
+.pl-title {
     font-size: 50px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .pl-desc {
     margin: 20px 0px;
+    color: #555;
+    line-height: 1.5;
 }
 
 .pl-list {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
 }
 
-.pl-p{
+.pl-task {
+    text-decoration: none;
+    color: inherit;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pl-task:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pl-task img {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-size: 20PX;
-    text-align: center;
-    font-size: 19px;
-    line-height: 25px;
-    
-    
-    
-    
-}
-.pl-task{
-    padding:1em;
-    text-align: center;
-    display:inline-block;
-    text-decoration: none !important;
-    margin:0 auto;
-    
-}
-.p-browser{
-    height: 20px;
-    background-color: white;
-    display: flex;
-    align-items: center;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.p-circle{
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    margin: 3px;
-    background-color: white;
+.pl-task h4 {
+    margin: 15px 0;
+    font-size: 20px;
 }
-.p-img{
+
+.pl-p {
+    font-size: 14px;
+    color: #777;
+}
+
+.image-container {
     width: 100%;
-    transition: all 10s ease;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.pl-task:hover .image-container img {
+    transform: scale(1.05);
+}
+
+/* Button styling */
 
 
-
-
-@media screen and (max-width: 480px) {
+/* Responsive Design */
+@media screen and (max-width: 768px) {
     .pl {
-      padding: 10px;
+        padding: 30px 20px;
     }
-  
-    .pl-texts {
-      width: 100%;
-    }
-  
-    .pl-desc {
-      display: none;
-    }
-  }
 
-  .image-container {
-    width: 150px; /* Set the container width */
-    height: 150px; /* Set the container height */
-    overflow: hidden; /* Ensures the image doesn’t spill out */
-    display: inline-block;
+    .pl-texts {
+        width: 100%;
+    }
+
+    .pl-title {
+        font-size: 40px;
+    }
+
+    .pl-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
 }
 
-.hover-image {
-    width: 100%; /* Fill the container */
-    height: 100%; /* Fill the container */
-    object-fit: cover; /* Prevent distortion */
+
+
+.btn-outline-info {
+    position: relative;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #00d4ff;
+    background: transparent;
+    border: 2px solid #00d4ff;
+    border-radius: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
+}
+
+/* Glow effect */
+.btn-outline-info::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: linear-gradient(45deg, 
+        #00d4ff, #00ff9d, #00d4ff, #00ff9d);
+    background-size: 400%;
+    border-radius: 25px;
+    opacity: 0;
+    transition: 0.5s;
+    animation: glowing 20s linear infinite;
+}
+
+/* Hover effects */
+.btn-outline-info:hover {
+    color: #fff;
+    background: #00d4ff;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-outline-info:hover::before {
+    opacity: 1;
+}
+
+/* Click effect */
+.btn-outline-info:active {
+    transform: scale(0.95) translateY(-1px);
+}
+
+/* Shine effect on hover */
+.btn-outline-info::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transform: rotate(45deg);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.btn-outline-info:hover::after {
+    left: 100%;
+    opacity: 1;
+}
+
+/* Glow animation */
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Optional: Add pulse animation when hovering */
+.btn-outline-info:hover {
+    animation: pulse 2s infinite;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .btn-outline-info {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }

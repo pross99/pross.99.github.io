@@ -5,7 +5,8 @@ import Email from "../../images/test1.png"
 import Adress from "../../images/test1.png"
 import { useContext, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faLink, faLinkedin,faEnvelope, faCity} from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
   const formRef = useRef();
@@ -36,19 +37,26 @@ const Contact = () => {
         <div className="c-wrapper">
         <div className="c-left">
           <h1 className="c-title">   
-          Smid gerne en besked min vej! </h1>
+          Get in touch </h1>
           <div className="c-info">
             <div className="c-info-item">
-            <img  src={Phone}alt="" className="c-icon" />
-            +45 31 43 09 67
+         <a href='https://www.linkedin.com/in/peter-ross-0826b9233/ ' className='c-info-item'>    
+         <FontAwesomeIcon icon={faLink} className='c-icon' />
+            LinkedIn
+             </a>
+           
           </div>
           <div className="c-info-item">
-          <img  src={Email}alt="" className="c-icon" />
+          <a href="mailto:peteross@outlook.dk" className='c-info-item'>   
+          <FontAwesomeIcon icon={faEnvelope} className='c-icon' />
           peteross@outlook.dk
+          </a>
           </div>
           <div className="c-info-item">
-          <img  src={Adress}alt="" className="c-icon" />
+             
+          <FontAwesomeIcon icon={faCity} className='c-icon' />
           København
+       
           </div>
           </div>
          
@@ -56,12 +64,12 @@ const Contact = () => {
         <div className="c-right">
         </div>
         <form ref={formRef} onSubmit={handleSubmit}>
-          <input type="text" placeholder='Navn' name="user_name" />
-          <input type="text" placeholder='Emne' name="user_subject" />
-          <input type="text" placeholder='Email' name="user_email" />
-          <textarea rows="5" placeholder='Besked' name="message" />
+          <input type="text" placeholder='Name' name="user_name" />
+          <input type="text" placeholder='Subject' name="user_subject" />
+          <input type="text" placeholder='Your email' name="user_email" />
+          <textarea rows="5" placeholder='Message' name="message" />
           <button> Send</button>
-          {done && "Besked sendt"}
+          {done && "Message sent - Thank you!"}
         </form>
  </div>
         </div>
